@@ -33,12 +33,15 @@ body {
   
   
 }
+.main-content {
+  width: 100%;
+}
 header { 
   background-image: url("public/assets/iteration-1/home-banner.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1920px;
+  width: 100%;
   height: 1080px;
   display: flex;
   flex-direction: column;
@@ -57,13 +60,10 @@ header {
   justify-content: center;
   
 }
-.logo1 img {
-  width: 363px;
-  height: 50px;
-}
+
 
 .main-section {
-  width: 586px;
+  width: 100%;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -91,6 +91,7 @@ header {
   margin: 0;
   padding: 0;
 }
+
 
 
 
@@ -146,6 +147,16 @@ header {
 
 .card {
   padding: 2em;
+  display: flex;
+  justify-content: center;
+
+}
+
+.card-1 h2 {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+
 }
 
 .read-the-docs {
@@ -166,6 +177,118 @@ header {
   background-color: #FDC913;
 
 }
+.card {
+  width: 55.8vw; 
+  height: 43.4vh; 
+  margin: 2rem auto 0 auto; 
+  display: flex;
+  gap: 0.5rem; 
+}
+
+.card-left,
+.card-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-left .card-image-wrapper {
+  flex: 1;
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-right .card-image-wrapper {
+  flex: 1;
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.2;
+ 
+  
+}
+.kart-1{
+  font-size: 3rem!important;
+  font-family: Quattrocento;
+}
+
+
+.card-content p {
+  margin: 0;
+  font-size: 1rem;
+}
+.button1 {
+  background: white;
+  
+}
+.red-text {
+  color: #F40000;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.black-text {
+  color: black;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin: 0;
+  color: black;
+}
+.button1 {
+  color: red;
+  width: 80%;
+  font-size: 1rem;
+  border-radius: 2rem;
+  
+    
+}
+.button2{
+  color: red;
+  background: white;
+  width: 100%;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+}
+.card-content2 h2 {
+  font-size: 1.5rem;
+}
+.card-content2 p {
+  font-size: 1.5rem;
+  
+}
+
+
+
+
+
 button:hover {
   border-color: #646cff;
 }
